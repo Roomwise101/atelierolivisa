@@ -4,7 +4,7 @@
  if(!host)return;
  let slides=[],current=0,timer;
  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- const safeUrl=(s)=>typeof s==='string' && !/^\s*(javascript:|data:)/i.test(s) ? s : '';
+ const safeUrl=(s)=>typeof s==='string' && (/^data:image\/(?:jpeg|jpg|png|webp|gif);base64,/i.test(s) || !/^\s*(javascript:|data:)/i.test(s)) ? s : '';
  function show(i){
   if(!slides.length)return;
   current=(i+slides.length)%slides.length;
@@ -22,7 +22,13 @@
   selected.forEach(w=>{
    const slide=document.createElement('div');slide.className='hero-slide';
    // Use CSS background to crop to the viewport, without changing the original artwork.
-   slide.style.backgroundImage='url('+JSON.stringify(safeUrl(w.image))+')';
+   const photo=document.createElement('img');
+    photo.src=safeUrl(w.image);
+    photo.alt=typeof w.title==='string'?w.title:'Original artwork';
+    photo.decoding='async';
+    photo.style.cssText='position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--focus,center);display:block;';
+    slide.style.position='absolute';
+    slide.appendChild(photo);
    slide.style.setProperty('--focus',typeof w.heroPosition==='string'?w.heroPosition:'center');
    host.appendChild(slide);slides.push(slide);
   });
