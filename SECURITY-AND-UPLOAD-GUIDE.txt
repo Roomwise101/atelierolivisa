@@ -1,0 +1,9 @@
+ATELIER OLIVISA — UPDATE GUIDE
+
+1. Keep a backup of your current repository.
+2. Upload the updated website files to the same paths in GitHub. Do not delete your existing artwork data.
+3. Dashboard: https://atelierolivisa.art/admin.html (bookmark it). The public footer link has been removed, but the dashboard URL is STILL PUBLIC.
+4. For studio entries, edit on dashboard, Export studio.json, then upload studio.json to the repository ROOT (not data/).
+5. For paintings, continue to Export artworks.json and upload to data/artworks.json.
+6. The dashboard uses local browser storage for drafts; keep exported backups. Visitors cannot change the live site without GitHub write permission, but they CAN access the public dashboard and edit their own browser copy.
+7. GitHub Pages does NOT support secure per-page password protection. Do not use a JavaScript-only password. To make the dashboard genuinely private, host it behind authenticated access (e.g. Cloudflare Access on a separate protected hostname) or use a GitHub-authenticated CMS with a backend. Do not treat a hidden link as security.
