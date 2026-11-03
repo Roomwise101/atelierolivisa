@@ -8,10 +8,18 @@
  function show(i){
   if(!slides.length)return;
   current=(i+slides.length)%slides.length;
-  slides.forEach((el,n)=>el.classList.toggle('active',n===current));
+  slides.forEach((el,n)=>{
+   const active=n===current;
+   if(active && !el.classList.contains('active')){
+    // Restart the gentle pan/zoom whenever this slide becomes visible.
+    const img=el.querySelector('img');
+    if(img){img.style.animation='none';void img.offsetWidth;img.style.animation='';}
+   }
+   el.classList.toggle('active',active);
+  });
   position.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
  }
- function reset(){clearInterval(timer);if(slides.length>1&&!reduce)timer=setInterval(()=>show(current+1),5000);}
+ function reset(){clearInterval(timer);if(slides.length>1&&!reduce)timer=setInterval(()=>show(current+1),9000);}
  document.getElementById('hero-prev').addEventListener('click',()=>{show(current-1);reset()});
  document.getElementById('hero-next').addEventListener('click',()=>{show(current+1);reset()});
  fetch('data/artworks.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Artwork feed unavailable');return r.json()}).then(data=>{

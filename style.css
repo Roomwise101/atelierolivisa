@@ -37,3 +37,15 @@ section[id]{scroll-margin-top:145px}
 
 /* Borderless editorial journal layouts */
 .journal-list{display:flex;flex-direction:column;gap:clamp(55px,8vw,115px);margin-top:42px}.journal-entry{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,90px);align-items:center;min-width:0}.journal-visual{width:100%;aspect-ratio:1/1;overflow:hidden;background:#e8e6df}.journal-visual img{width:100%;height:100%;object-fit:cover;display:block}.journal-copy{min-width:0;max-width:590px}.journal-copy h3{font:normal clamp(30px,3.7vw,56px)/1.13 Georgia,serif;letter-spacing:-.03em;margin:14px 0 22px}.journal-copy p{white-space:pre-line;overflow-wrap:anywhere;color:var(--mute);line-height:1.85}.journal-entry.image-right .journal-visual{order:2}.journal-entry.image-right .journal-copy{order:1}.studio-admin{padding-top:65px}.studio-admin-head{margin-bottom:28px}.studio-admin-head h2{font-size:clamp(32px,4vw,52px)}@media(max-width:700px){.journal-entry{grid-template-columns:1fr;gap:22px}.journal-entry.image-right .journal-visual,.journal-entry.image-right .journal-copy{order:initial}.journal-copy h3{margin:12px 0}.journal-list{gap:58px}}
+
+
+/* Gentle Ken Burns movement on the homepage slideshow only. */
+.hero-slide{overflow:hidden;will-change:opacity}
+.hero-slide>img{transform:scale(1);transform-origin:center center;will-change:transform}
+.hero-slide.active>img{animation:ao-ken-burns-a 9s ease-in-out both}
+.hero-slide.active:nth-child(3n + 2)>img{animation-name:ao-ken-burns-b}
+.hero-slide.active:nth-child(3n + 3)>img{animation-name:ao-ken-burns-c}
+@keyframes ao-ken-burns-a{from{transform:scale(1.005) translate(0,0)}to{transform:scale(1.055) translate(-.6%,.35%)}}
+@keyframes ao-ken-burns-b{from{transform:scale(1.055) translate(.6%,-.3%)}to{transform:scale(1.005) translate(0,0)}}
+@keyframes ao-ken-burns-c{from{transform:scale(1.01) translate(-.4%,-.35%)}to{transform:scale(1.06) translate(.5%,.25%)}}
+@media(prefers-reduced-motion:reduce){.hero-slide.active>img{animation:none!important;transform:none!important}.hero-slide{transition:none!important}}

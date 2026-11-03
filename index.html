@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="en"><head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8F86HJN5Q0"></script>
+  <!-- Analytics loads only after the visitor consents. -->
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-8F86HJN5Q0');
+    window.ATELIER_ANALYTICS_ID = 'G-8F86HJN5Q0';
   </script>
+  <style>
+    .ao-cookie-banner{position:fixed;z-index:99999;bottom:18px;left:18px;right:18px;max-width:560px;margin:auto;padding:22px 24px;background:#f8f5ed;color:#292923;border:1px solid #d9d2c4;box-shadow:0 12px 40px rgba(0,0,0,.18);font-family:inherit;line-height:1.5}
+    .ao-cookie-banner[hidden]{display:none!important}
+    .ao-cookie-banner h2{font-size:1.15rem;margin:0 0 8px;font-weight:500}
+    .ao-cookie-banner p{font-size:.88rem;margin:0 0 16px}
+    .ao-cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .ao-cookie-actions button{cursor:pointer;font:inherit;font-size:.85rem;padding:10px 16px;border:1px solid #494b3d;background:transparent;color:#292923;flex:1;min-width:145px}
+    .ao-cookie-actions button.ao-accept{background:#494b3d;color:#fff}
+    .ao-cookie-actions button:focus-visible,#ao-cookie-settings:focus-visible{outline:3px solid #8b9169;outline-offset:3px}
+    #ao-cookie-settings{background:none;border:0;text-decoration:underline;cursor:pointer;color:inherit;font:inherit;padding:0}
+    @media(max-width:480px){.ao-cookie-banner{bottom:10px;left:10px;right:10px;padding:18px}.ao-cookie-actions{flex-direction:column}}
+  </style>
 <meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#f8f5ed" name="theme-color"/><meta content="Atelier Olivisa — original oil paintings, fine-art prints and commissions." name="description"/><title>Atelier Olivisa — An Artful Life</title><link href="style.css" rel="stylesheet"/></head><body>
 <header class="site-header"><a aria-label="Atelier Olivisa home" class="brand" href="#home"><img alt="" src="assets/olive.svg"/><span>ATELIER <em>OLIVISA</em><small>ART • HOME • STORY</small></span></a><nav id="nav"><a href="#home">Home</a><a href="#gallery">Originals</a><a href="#prints">Prints</a><a href="#easel">On the Easel</a><a href="#studio">From the Studio</a><a href="#toolkit">Artist's Toolkit</a><a href="#commissions">Commissions</a><a href="#story">Our Story</a><a href="#contact">Contact</a></nav></header>
 <main id="home"><section class="hero hero-fullbleed"><div aria-hidden="true" class="hero-slides" id="hero-slides"></div><div aria-hidden="true" class="hero-shade"></div><div class="hero-copy"><div class="eyebrow">ART WITH A PERSONAL STORY</div><h1>Made slowly.<br/><i>Made to stay.</i></h1><p>Original paintings, thoughtfully chosen prints and meaningful commissions. Art to bring warmth, memory and a little wonder into everyday spaces.</p><div class="actions"><a class="btn" href="#gallery">Explore the collection</a></div></div><div aria-hidden="true" class="legacy-featured"><div class="artwork-frame"><div class="painting-placeholder" id="featured-visual"><span>Atelier<br/>Olivisa</span></div></div><div class="hero-label" id="featured-label">A collection in the making · Original artwork</div></div><div class="hero-carousel-controls"><button aria-label="Previous painting" id="hero-prev" type="button">‹</button><span aria-live="off" id="hero-position">01 / 01</span><button aria-label="Next painting" id="hero-next" type="button">›</button></div></section>
@@ -21,5 +28,62 @@
 <section class="section studio-section" id="easel"><div class="section-head"><div><span class="eyebrow">WORK IN PROGRESS</span><h2>On the Easel</h2></div><p>Follow the journey from first brushstroke to finished painting.</p></div><div class="editorial-grid" id="easel-grid"></div></section><section class="commissions section" id="commissions"><span class="eyebrow">SOMETHING UNIQUELY YOURS</span><h2>Commission a story.</h2><p>A portrait, a meaningful landscape or a moment that deserves to live beyond a photograph. Tell me your idea and we can explore a bespoke painting together.</p><a class="btn" href="#contact">Enquire about commissions</a></section>
 <section class="story section" id="story"><div class="story-mark"><img alt="Olive branch illustration" src="assets/olive.svg"/></div><div><span class="eyebrow">BEHIND THE NAME</span><h2>A studio with heart.</h2><p>Atelier Olivisa takes its name from Oliver and Isabella — two names close to the heart of the artist. “Atelier” reflects a love of French art, places and the quiet inspiration of the Mediterranean.</p><p>From oil paintings and portraits to scenes that hold memories, every piece is made with care, curiosity and a love of painting.</p></div></section>
 <section class="contact section" id="contact"><span class="eyebrow">LET'S TALK ART</span><h2>Have a piece in mind?</h2><p>For original artwork, prints or commission enquiries, reach out on Instagram.</p><a class="btn" href="https://www.instagram.com/atelierolivisa/" id="instagram-link" rel="noopener noreferrer" target="_blank">Find us on Instagram ↗</a><small id="contact-note">Instagram: @atelierolivisa</small></section></main>
-<footer><div class="footer-brand">ATELIER OLIVISA</div><p>Art, home &amp; story · Made with heart</p><div><a href="#home">Back to top ↑</a></div><small>© <span id="year"></span> Atelier Olivisa. All rights reserved.</small></footer>
+<footer><div class="footer-brand">ATELIER OLIVISA</div><p>Art, home &amp; story · Made with heart</p><div><a href="#home">Back to top ↑</a> · <button type="button" id="ao-cookie-settings">Cookie settings</button></div><small>© <span id="year"></span> Atelier Olivisa. All rights reserved.</small></footer>
+<aside class="ao-cookie-banner" id="ao-cookie-banner" role="region" aria-label="Cookie preferences" hidden>
+  <h2>A little note about cookies</h2>
+  <p>We use optional Google Analytics cookies to understand how visitors explore Atelier Olivisa. You can accept or reject analytics; either way, you can enjoy the gallery. You can change your choice using Cookie settings in the footer.</p>
+  <div class="ao-cookie-actions">
+    <button type="button" id="ao-cookie-reject">Reject optional</button>
+    <button type="button" class="ao-accept" id="ao-cookie-accept">Accept analytics</button>
+  </div>
+</aside>
+<script>
+(function () {
+  'use strict';
+  var storageKey = 'atelier-olivisa-analytics-consent-v1';
+  var banner = document.getElementById('ao-cookie-banner');
+  var loaded = false;
+  function readChoice() {
+    try { return localStorage.getItem(storageKey); } catch (e) { return null; }
+  }
+  function saveChoice(choice) {
+    try { localStorage.setItem(storageKey, choice); } catch (e) { /* consent not persisted */ }
+  }
+  function startAnalytics() {
+    if (loaded) return;
+    loaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', window.ATELIER_ANALYTICS_ID);
+    var tag = document.createElement('script');
+    tag.async = true;
+    tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(window.ATELIER_ANALYTICS_ID);
+    document.head.appendChild(tag);
+  }
+  function applyChoice(choice) {
+    banner.hidden = true;
+    if (choice === 'accepted') startAnalytics();
+    else if (loaded && typeof window.gtag === 'function') {
+      // Consent withdrawal for the current page; prevent future tracking.
+      window.gtag('consent', 'update', {analytics_storage: 'denied'});
+      // Reload to remove the already-loaded Analytics script from this page.
+      location.reload();
+    }
+  }
+  document.getElementById('ao-cookie-accept').addEventListener('click', function () {
+    saveChoice('accepted'); applyChoice('accepted');
+  });
+  document.getElementById('ao-cookie-reject').addEventListener('click', function () {
+    saveChoice('rejected'); applyChoice('rejected');
+  });
+  document.getElementById('ao-cookie-settings').addEventListener('click', function () {
+    banner.hidden = false;
+    document.getElementById('ao-cookie-reject').focus();
+  });
+  var choice = readChoice();
+  if (choice === 'accepted') startAnalytics();
+  else if (choice !== 'rejected') banner.hidden = false;
+})();
+</script>
 <dialog id="art-dialog"><button aria-label="Close artwork details" class="dialog-close">×</button><div id="dialog-body"></div></dialog><script src="settings.js"></script><script src="site-v2.js"></script><script defer="True" src="hero-refresh.js"></script></body></html>
