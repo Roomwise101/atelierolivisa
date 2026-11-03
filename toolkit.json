@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Winsor & Newton Artists’ Oil Colour",
+      "description": "Professional oil colour in a broad choice of pigments and tube sizes. Select your preferred colour at Jackson’s.",
+      "url": "https://www.awin1.com/cread.php?awinmid=79140&awinaffid=3142792&ued=https%3A%2F%2Fwww.jacksonsart.com%2Fwinsor-newton-artist-oil-paint",
+      "artistChoice": false
+    },
+    {
+      "name": "Jackson’s Shinku Red Synthetic Bristle Brush Set of 4",
+      "description": "A four-brush selection of synthetic bristle shapes for different oil-painting marks and techniques.",
+      "url": "https://www.awin1.com/cread.php?awinmid=79140&awinaffid=3142792&ued=https%3A%2F%2Fwww.jacksonsart.com%2Fjackson-s-shinku-red-synthetic-bristle-hair-brush-set-of-4-0-6-round-8-bright-4-filbert",
+      "artistChoice": false
+    },
+    {
+      "name": "Michael Harding Refined Linseed Oil — 250ml",
+      "description": "A traditional oil-painting medium used to alter paint flow and sheen. Follow the maker’s instructions.",
+      "url": "https://www.awin1.com/cread.php?awinmid=79140&awinaffid=3142792&ued=https%3A%2F%2Fwww.jacksonsart.com%2Fmichael-harding-refined-linseed-oil-250ml",
+      "artistChoice": false
+    },
+    {
+      "name": "Jackson’s Premium Primed Stretched Cotton Canvas — 10oz",
+      "description": "A ready-primed stretched cotton canvas available in a selection of sizes.",
+      "url": "https://www.awin1.com/cread.php?awinmid=79140&awinaffid=3142792&ued=https%3A%2F%2Fwww.jacksonsart.com%2Fjackson-s-premium-primed-stretched-cotton-canvas-10-oz",
+      "artistChoice": false
+    }
+  ]
+}
