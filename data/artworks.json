@@ -1,5 +1,18 @@
 [
   {
+    "id": "eddie-jordan",
+    "title": "‘Eddie Jordan’",
+    "description": "A giant personality of Formula One – a passion of mine since childhood.",
+    "medium": "Graphite pencil",
+    "dimensions": "A3 sketchbook",
+    "price": "",
+    "category": "original",
+    "status": "available",
+    "featured": false,
+    "image": "assets/eddie-jordan.jpg",
+    "video": "assets/eddie-jordan.mp4"
+  },
+  {
     "id": "art-mwd5dkah-mcvik",
     "title": "‘Dreaming of Electric sheep’",
     "description": "This painting is partly self portrait of my eye. Industrial Teesside is reflected in the iris. It is a reference to the 1968 Novel which served as the primary inspiration for Ridley Scott's 1982 film Blade Runner.",
