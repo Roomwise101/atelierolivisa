@@ -13,6 +13,34 @@
     "video": "assets/eddie-jordan.mp4"
   },
   {
+    "id": "bamburgh-castle",
+    "title": "Bamburgh Castle",
+    "medium": "Oil on canvas",
+    "category": "original",
+    "status": "sold",
+    "featured": true,
+    "image": "assets/bamburgh-castle.jpg"
+  },
+  {
+    "id": "reflections-in-tyne",
+    "title": "Reflections in Tyne",
+    "medium": "Oil on canvas",
+    "category": "original",
+    "status": "sold",
+    "featured": true,
+    "image": "assets/reflections-in-tyne.jpg"
+  },
+  {
+    "id": "les",
+    "title": "Les",
+    "medium": "Oil on canvas",
+    "category": "original",
+    "status": "sold",
+    "featured": true,
+    "heroPosition": "center 35%",
+    "image": "assets/les.jpg"
+  },
+  {
     "id": "art-mwd5dkah-mcvik",
     "title": "‘Dreaming of Electric sheep’",
     "description": "This painting is partly self portrait of my eye. Industrial Teesside is reflected in the iris. It is a reference to the 1968 Novel which served as the primary inspiration for Ridley Scott's 1982 film Blade Runner.",
