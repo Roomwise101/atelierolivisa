@@ -26,7 +26,7 @@
   if(!Array.isArray(data))return;
   const originals=data.filter(w=>w&&w.category!=='print'&&safeUrl(w.image));
   const featured=originals.filter(w=>w.featured);
-  const selected=(featured.length?featured:originals).slice(0,12);
+  const selected=featured.length?featured:originals;
   selected.forEach(w=>{
    const slide=document.createElement('div');slide.className='hero-slide';
    // Use CSS background to crop to the viewport, without changing the original artwork.

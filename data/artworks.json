@@ -1,5 +1,39 @@
 [
   {
+    "id": "frida-kahlo",
+    "title": "Frida Kahlo",
+    "description": "Painted to order and donated to a local primary school's summer event, to raise money through an auction and inspire the children.",
+    "medium": "Oil on canvas",
+    "category": "original",
+    "status": "sold",
+    "featured": true,
+    "heroPosition": "center 35%",
+    "image": "assets/frida-kahlo.jpg"
+  },
+  {
+    "id": "sir-lenny-henry",
+    "title": "Sir Lenny Henry",
+    "description": "Painted on a Sunday afternoon as part of a Sky Arts Portrait Artist of the Year live paint-along.",
+    "medium": "Oil on canvas",
+    "price": "£125",
+    "category": "original",
+    "status": "available",
+    "featured": true,
+    "heroPosition": "center 35%",
+    "image": "assets/sir-lenny-henry.jpg"
+  },
+  {
+    "id": "a-beautiful-wedding",
+    "title": "A Beautiful Wedding",
+    "description": "Two of the most amazing and inspiring people, who just happened to be friends and neighbours, got married and invited us to their wedding. I decided to create something special as a gift for them to keep.",
+    "medium": "Oil on canvas",
+    "category": "original",
+    "status": "sold",
+    "featured": true,
+    "heroPosition": "center 35%",
+    "image": "assets/a-beautiful-wedding.jpg"
+  },
+  {
     "id": "eddie-jordan",
     "title": "‘Eddie Jordan’",
     "description": "A giant personality of Formula One – a passion of mine since childhood.",
