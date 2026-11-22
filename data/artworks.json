@@ -1,5 +1,27 @@
 [
   {
+    "id": "god-bless-her",
+    "title": "God bless her",
+    "description": "Her Majesty Queen Elizabeth II. I painted this before her passing. Our forever Queen.",
+    "medium": "Oil on canvas",
+    "category": "original",
+    "status": "sold",
+    "featured": true,
+    "heroPosition": "center 48%",
+    "image": "assets/god-bless-her.jpg"
+  },
+  {
+    "id": "king-charles",
+    "title": "King Charles",
+    "description": "I painted this portrait upon his accession to the throne. It now adorns the wall of a Masonic hall.",
+    "medium": "Oil on canvas",
+    "category": "original",
+    "status": "sold",
+    "featured": true,
+    "heroPosition": "center 33%",
+    "image": "assets/king-charles.jpg"
+  },
+  {
     "id": "frida-kahlo",
     "title": "Frida Kahlo",
     "description": "Painted to order and donated to a local primary school's summer event, to raise money through an auction and inspire the children.",
